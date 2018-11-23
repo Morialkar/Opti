@@ -3,6 +3,7 @@ optimize() {
   jpegoptim *.jpg --strip-all --all-progressive
   jpegoptim *.jpeg --strip-all --all-progressive
   jpegoptim *.JPG --strip-all --all-progressive
+  optipng *.png
   for i in *
   do
     if test -d $i
