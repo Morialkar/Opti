@@ -7,6 +7,23 @@ Install script on your server in the directory you want, then symlink it to `/us
 
 When you want to run it, simply `cd` in the directory you wish to optimize then run `opti`. This script can easily be used to create a cron tab.
 
+## Good to know
+When you see any of the following output:
+
+```
+jpegoptim: skipping special file: *.jpg
+jpegoptim: skipping special file: *.jpeg
+jpegoptim: skipping special file: *.JPG
+** Processing: *.png
+Error: Can't open the input file
+
+** Status report
+1 file(s) have been processed.
+1 error(s) have been encountered.
+```
+
+This simply means that either or both jpegoptim and optipng have not found files to optimized in the folder.
+
 ## Requirements
 
 * Linux based system
